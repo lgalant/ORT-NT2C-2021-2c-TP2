@@ -1,5 +1,5 @@
-function convertToObjectArray(names) {
-  return names.map((n) => {
-    return { nombre: n, longitud: n.length };
+function convertToObjectArray(items) {
+  return items.map((x) => {
+    return { nombre: x, longitud: x.length };
   });
 }
