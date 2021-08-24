@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1> Bienvenidos !</h1>
+    <script>
+        console.log("Hola!")
+        let nombres = ['Adriana', 'Benito', 'Claudia', 'Daniel', 'Estefania', 'Fernando', 'Gabriela', 'Hugo']
+        const result = nombres.map((n) => {
+            return { nombre: n, longitud: n.length }
+        }
+        )
+        console.log(JSON.stringify(result));
+    </script>
+</body>
+
+</html>
