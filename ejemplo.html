@@ -10,6 +10,11 @@
                 console.log(nombre)
             }
             )
+            function convertToArray(nombres) {
+                return nombres.map(n => ({nombre: n, longitud: n.length})
+                )
+            }
+            console.log(JSON.stringify(convertToArray(nombres)))
 
         </script>
     </body>
