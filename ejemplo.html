@@ -4,12 +4,11 @@
         <h1> Bienvenidos !</h1>
         <script>
             console.log("Hola!")
-            function convertirAArray(nombres) {
-                return nombres.map(n => ({nombre: n, longitud: n.length}))
-            }
 
             let nombres = ['Adriana', 'Benito', 'Claudia', 'Daniel', 'Estefania', 'Fernando','Gabriela','Hugo']
-            console.log(JSON.stringify(convertirAArray(nombres)))
+            nombres.forEach(function(nombre) {
+                console.log(JSON.stringify({ nombre: nombre, longitud: nombre.length }) )
+            })
 
         </script>
     </body>
