@@ -7,9 +7,8 @@
 
             let nombres = ['Adriana', 'Benito', 'Claudia', 'Daniel', 'Estefania', 'Fernando','Gabriela','Hugo']
             nombres.forEach(function(nombre) {
-                console.log(nombre)
-            }
-            )
+                console.log(JSON.stringify({ nombre: nombre, longitud: nombre.length }) )
+            })
 
         </script>
     </body>
