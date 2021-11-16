@@ -6,11 +6,10 @@
             console.log("Hola!")
 
             let nombres = ['Adriana', 'Benito', 'Claudia', 'Daniel', 'Estefania', 'Fernando','Gabriela','Hugo']
-            function transformarNombres(nombres) {
-                return nombres.map(nombre => ({nombre: nombre, longitud: nombre.length}));
+            nombres.map(nombre => ({nombre: nombre, longitud: nombre.length}).forEach(function(nombre) {
+                console.log(nombre)
             }
-
-            console.log(transformarNombres(nombres));
+            )
 
         </script>
     </body>
