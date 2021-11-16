@@ -6,7 +6,7 @@
             console.log("Hola!")
 
             let nombres = ['Adriana', 'Benito', 'Claudia', 'Daniel', 'Estefania', 'Fernando','Gabriela','Hugo']
-            nombres.forEach(function(nombre) {
+            nombres.map(nombre => ({nombre: nombre, longitud: nombre.length}).forEach(function(nombre) {
                 console.log(nombre)
             }
             )
